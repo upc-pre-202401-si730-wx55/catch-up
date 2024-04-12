@@ -6,7 +6,7 @@ import ArticleList from "./news/components/article-list.component.vue";
 import UnavailableContent from "./news/components/unavailable-content.component.vue";
 
 export default {
-  name: "App",
+  name: "app",
   components: {UnavailableContent, ArticleList, SideMenu},
   data() {
     return {
