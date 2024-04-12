@@ -1,10 +1,8 @@
 <script>
 import {NewsApiService} from "../services/news-api.service.js";
-import PvSidebar from "../../main.js";
 
 export default {
   name: "side-menu",
-  components: {PvSidebar},
   props: { visible: Boolean },
   data() {
     return {
