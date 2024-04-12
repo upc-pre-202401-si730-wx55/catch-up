@@ -23,6 +23,7 @@ import 'primeicons/primeicons.css';
 
 // Add App Theme
 import 'primevue/resources/themes/md-light-indigo/theme.css';
+import i18n from "./i18n.js";
 
 
 const app = createApp(App);
@@ -37,6 +38,9 @@ app.use(PrimeVue, { ripple: true})
     .component('pv-menu', Menu)
     .component('pv-menubar', Menubar)
     .component('pv-toolbar', Toolbar);
+
+// Add i18n Plugin
+app.use(i18n);
 
 // Mount in app div
 app.mount('#app');
