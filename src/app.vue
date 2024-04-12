@@ -4,10 +4,11 @@ import {Article} from "./news/model/article.entity.js";
 import SideMenu from "./news/components/side-menu.component.vue";
 import ArticleList from "./news/components/article-list.component.vue";
 import UnavailableContent from "./news/components/unavailable-content.component.vue";
+import FooterContent from "./public/components/footer-content.component.vue";
 
 export default {
   name: "app",
-  components: {UnavailableContent, ArticleList, SideMenu},
+  components: {FooterContent, UnavailableContent, ArticleList, SideMenu},
   data() {
     return {
       sidebarVisible: false,
@@ -73,4 +74,5 @@ export default {
     <article-list v-if="errors" :articles="articles"/>
     <unavailable-content v-else :errors="errors"/>
   </div>
+  <footer-content/>
 </template>
