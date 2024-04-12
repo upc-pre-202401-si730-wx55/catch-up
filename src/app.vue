@@ -17,7 +17,7 @@ export default {
     }
   },
   created() {
-    //TODO: Get Articles for default source
+    this.getArticlesForSource('bbc-news');
   },
   methods: {
     // Build article list from response data
